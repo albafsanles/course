@@ -34,6 +34,8 @@ rm(f,tmp)
 
 #format the year variable
 current.year<-as.integer(format(Sys.Date(),"%Y"))
+#first rows
+head(current.year)
 #use dply and pipe operator to crete data frame to plot later
 plot.dat<-
   dat %>% #use initial data frame
